@@ -125,7 +125,7 @@ OUTPUT_DIR  = "agency_files"
 MASTER_FILE = "pakistan_agencies_dataset.csv"
 WIKI_BASE   = "https://en.wikipedia.org/wiki/"
 HEADERS     = {"User-Agent": "Mozilla/5.0 (NLP-Lab-Assignment/1.0)"}
-DELAY       = 1.0          # seconds between requests
+DELAY       = 1.0         
 MAX_CHARS   = 5000
 
 def scrape_page(slug: str) -> str:
@@ -191,7 +191,7 @@ def save_individual_files():
             print(f"           Saved {len(text):,} chars → {safe_name}")
         else:
             failed.append(slug)
-            print(f"           [FAILED] No content found.")
+            print(f"[FAILED] No content found.")
 
         time.sleep(DELAY)
 
