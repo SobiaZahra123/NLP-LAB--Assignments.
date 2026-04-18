@@ -42,13 +42,8 @@ agencies, saving individual text files, then merging them into a single master C
 - Housing & Development: CDA, LDA, KDA
 
 ### How to Run
-
-```bash
 pip install requests beautifulsoup4
 python nlp_pakistan_agencies_scraper.py
-```
-
-The script resumes automatically if interrupted.
 
 ### Kaggle Dataset
 
